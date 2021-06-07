@@ -33,10 +33,9 @@ class MahasiswaController extends Controller
         //dump($result);
         return view('mahasiswa.index', ['allmahasiswa' => $result, 'kampus' => $kampus]);
     }
-}
 
-public function insertQb()
-   {
+    public function insertQb()
+    {
          $result = DB::table('mahasiswas')->insert(
             [
                   'npm' => '1923250001',
